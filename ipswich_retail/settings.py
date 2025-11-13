@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-*-e2%2@!iimlv-ga@d-c^&k+1m6%$_y%_scdfnnd=c7ia=dyf=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["mani.ManiPython.com"]
+ALLOWED_HOSTS = [
+    "ManiPython.pythonanywhere.com",
+    "127.0.0.1",
+    "localhost",
+    "testserver",
+]
+
 
 
 # Application definition
