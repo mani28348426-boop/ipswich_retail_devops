@@ -1,0 +1,35 @@
+[INFO] 2025-11-14 03:35:14,312 django.utils.autoreload: Watching for file changes with StatReloader
+[ERROR] 2025-11-14 03:35:22,188 django.security.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\HP\PycharmProjects\ipswich_retail_devops\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\HP\PycharmProjects\ipswich_retail_devops\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\HP\PycharmProjects\ipswich_retail_devops\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\HP\PycharmProjects\ipswich_retail_devops\venv\lib\site-packages\django\http\request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[WARNING] 2025-11-14 03:35:22,188 django.server: "GET / HTTP/1.1" 400 69018
+[INFO] 2025-11-14 03:36:24,533 django.utils.autoreload: C:\Users\HP\PycharmProjects\ipswich_retail_devops\ipswich_retail\settings.py changed, reloading.
+[INFO] 2025-11-14 03:36:24,842 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-11-14 03:36:28,860 django.server: "GET / HTTP/1.1" 200 5436
+[INFO] 2025-11-14 04:07:16,555 django.utils.autoreload: Watching for file changes with StatReloader
+[INFO] 2025-11-14 04:07:18,230 django.server: "GET / HTTP/1.1" 200 5436
+[INFO] 2025-11-14 04:07:20,952 django.server: "GET / HTTP/1.1" 200 5436
+[INFO] 2025-11-14 04:07:22,426 django.server: "GET /products/ HTTP/1.1" 200 3796
+[INFO] 2025-11-14 04:07:24,226 django.server: "GET /about/ HTTP/1.1" 200 2796
+[INFO] 2025-11-14 04:07:25,486 django.server: "GET /contact/ HTTP/1.1" 200 4444
+[INFO] 2025-11-14 04:07:28,328 django.server: "GET /about/ HTTP/1.1" 200 2796
+[INFO] 2025-11-14 04:07:29,165 django.server: "GET / HTTP/1.1" 200 5436
+[INFO] 2025-11-14 04:07:35,248 django.server: "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2025-11-14 04:07:35,271 django.server: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+[INFO] 2025-11-14 04:07:35,299 django.server: "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[INFO] 2025-11-14 04:07:35,300 django.server: "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[INFO] 2025-11-14 04:07:35,304 django.server: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[INFO] 2025-11-14 04:07:35,308 django.server: "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[INFO] 2025-11-14 04:07:35,308 django.server: "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[INFO] 2025-11-14 04:07:35,309 django.server: "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[INFO] 2025-11-14 04:07:35,310 django.server: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[WARNING] 2025-11-14 04:07:48,219 django.request: Not Found: /login
+[WARNING] 2025-11-14 04:07:48,221 django.server: "GET /login HTTP/1.1" 404 3530
