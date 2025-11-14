@@ -30,3 +30,13 @@ jobs:
         run: |
           python manage.py migrate
           python manage.py test
+
+  # Example CD-ready structure (placeholder)
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Deployment placeholder
+        run: echo "Here we would deploy the app (e.g. to Render/Railway) after tests pass."
